@@ -7,9 +7,9 @@
     <title>Blogs</title>
 </head>
 <body>
-    <?php foreach($data as $d): ?>
-        <h2><?= $d['title'] ?></h2>
-        <p><?= $d['text'] ?></p>
+    <?php foreach($data as $post): ?>
+        <h2><?= $post['title'] ?></h2>
+        <p><?= $post['text'] ?></p>
     <?php endforeach; ?>
 </body>
 </html>

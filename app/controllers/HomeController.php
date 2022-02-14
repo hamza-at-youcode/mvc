@@ -1,7 +1,7 @@
 <?php
 
 
-class Home extends Controller{
+class HomeController extends Controller{
 
     public function index(){
         echo '<h1>Welcome home!</h1><br>';
@@ -14,5 +14,11 @@ class Home extends Controller{
     public function showUserName(){
         $user = $this->getModelInstance('User');
         echo $user->name;
+    }
+
+    public function displayBlogs(){
+        $blog = $this->getModelInstance('Blog');
+        // $posts = $blog->getBlogs();
+        // $this->view('blogs',$posts);
     }
 }

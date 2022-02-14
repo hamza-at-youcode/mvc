@@ -1,7 +1,7 @@
 <?php
 
 
-class Blogs extends Controller{
+class BlogController extends Controller{
     
 
     public function index(){
@@ -10,7 +10,7 @@ class Blogs extends Controller{
 
     public function displayBlogs(){
         $blog = $this->getModelInstance('Blog');
-        $b = $blog->getBlogs();
-        $this->view('blogs',$b);
+        $posts = $blog->getBlogs();
+        $this->view('blogs',$posts);
     }
 }
